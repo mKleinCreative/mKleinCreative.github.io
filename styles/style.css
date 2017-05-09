@@ -1,3 +1,28 @@
-.mdl{
+/*.mdl {
   background-color: #bada55
+}*/
+
+.mdl-layout__content {
+  -webkit-box-shadow: inset 3px 0px 29px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 3px 0px 29px -4px rgba(0,0,0,0.75);
+  box-shadow: inset 3px 0px 29px -4px rgba(0,0,0,0.75);}
+
+.mdl-card:hover{
+  background-color: red;
+  perspective: 800;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  transition: preserve-3d;
+  position: relative;
+  -webkit-perspective: 800;
+  transform: rotateY(180deg);
+}
+
+html {
+  background-image: url("../assets/images/Background.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
