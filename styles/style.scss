@@ -7,16 +7,39 @@
   -moz-box-shadow: inset 3px 0px 29px -4px rgba(0,0,0,0.75);
   box-shadow: inset 3px 0px 29px -4px rgba(0,0,0,0.75);}
 
-.mdl-card:hover{
-  background-color: red;
+.mdl-card{
   perspective: 800;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 1s;
-  transition: preserve-3d;
   position: relative;
   -webkit-perspective: 800;
+}
+
+.portfolio-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.portfolio-card:hover{
+  -webkit-transform-origin: right center;
+  transform: translateX(-100%) rotateY(180deg);
+}
+
+.portfolio-card .front{
+  border-radius: 6px;
+  position: absolute;
+  overflow: hidden;
+  background-color: #bada55;
+}
+
+.portfolio-card .back{
+  backface-visibility: hidden;
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 html {
@@ -24,5 +47,4 @@ html {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
