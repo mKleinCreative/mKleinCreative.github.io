@@ -5,7 +5,8 @@
 .mdl-layout__content {
   -webkit-box-shadow: inset 3px 0px 29px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 3px 0px 29px -4px rgba(0,0,0,0.75);
-  box-shadow: inset 3px 0px 29px -4px rgba(0,0,0,0.75);}
+  box-shadow: inset 3px 0px 29px -4px rgba(0,0,0,0.75)
+}
 
 .mdl-card{
   perspective: 800;
@@ -14,38 +15,42 @@
   -webkit-perspective: 800;
 }
 
-.mdl-card:hover .portfolio-card {
-  -webkit-transform-origin: right center;
-  transform: translateX(-100%) rotateY(180deg);
-  background-color: #bad155
-}
-
-.portfolio-card {
-  position: relative;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  background-color: #bad455
-}
-
-.portfolio-card .front{
-  backface-visibility: hidden;
-  border-radius: 6px;
-  position: static;
-  overflow: hidden;
-  background-color: #bada55;
-}
-
-.portfolio-card .back{
-  backface-visibility: hidden;
-  background: #eaeaed;
-  color: #0087cc;
+img {
   height: 100%;
   width: 100%;
-  line-height: 150px;
-  text-align: center;
-  transform: rotateY(180deg);
-  cursor: pointer;
 }
+// .mdl-card:hover .portfolio-card {
+//   -webkit-transform-origin: right center;
+//   transform: translateX(-100%) rotateY(180deg);
+//   background-color: #bad155
+// }
+//
+// .portfolio-card {
+//   position: relative;
+//   transform-style: preserve-3d;
+//   transition: all 1s ease-in-out;
+//   background-color: #bad455
+// }
+//
+// .portfolio-card .front{
+//   backface-visibility: hidden;
+//   border-radius: 6px;
+//   position: static;
+//   overflow: hidden;
+//   background-color: #bada55;
+// }
+//
+// .portfolio-card .back{
+//   backface-visibility: hidden;
+//   background: #eaeaed;
+//   color: #0087cc;
+//   height: 100%;
+//   width: 100%;
+//   line-height: 150px;
+//   text-align: center;
+//   transform: rotateY(180deg);
+//   cursor: pointer;
+// }
 
 html {
   background-image: url("../assets/images/Background.jpg");
