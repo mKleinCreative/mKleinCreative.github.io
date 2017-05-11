@@ -14,20 +14,23 @@
   -webkit-perspective: 800;
 }
 
+.mdl-card:hover .portfolio-card {
+  -webkit-transform-origin: right center;
+  transform: translateX(-100%) rotateY(180deg);
+  background-color: #bad155
+}
+
 .portfolio-card {
   position: relative;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-}
-
-.portfolio-card:hover{
-  -webkit-transform-origin: right center;
-  transform: translateX(-100%) rotateY(180deg);
+  background-color: #bad455
 }
 
 .portfolio-card .front{
+  backface-visibility: hidden;
   border-radius: 6px;
-  position: absolute;
+  position: static;
   overflow: hidden;
   background-color: #bada55;
 }
@@ -36,6 +39,8 @@
   backface-visibility: hidden;
   background: #eaeaed;
   color: #0087cc;
+  height: 100%;
+  width: 100%;
   line-height: 150px;
   text-align: center;
   transform: rotateY(180deg);
