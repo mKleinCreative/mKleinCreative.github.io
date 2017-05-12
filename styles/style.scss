@@ -29,10 +29,19 @@
   width: 50px
 }
 
+html {
+  background-image: url("../assets/images/Background.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 img {
   height: 250px;
   width: 100%;
 }
+// depreciated animation stuff vv
+
 // .mdl-card:hover .portfolio-card {
 //   -webkit-transform-origin: right center;
 //   transform: translateX(-100%) rotateY(180deg);
@@ -65,10 +74,3 @@ img {
 //   transform: rotateY(180deg);
 //   cursor: pointer;
 // }
-
-html {
-  background-image: url("../assets/images/Background.jpg");
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
